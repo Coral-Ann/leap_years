@@ -17,4 +17,8 @@ describe '#leap_year?' do
   it 'should make years not divisible by 4, false' do
     expect(leap_year?(2009)).to eq false
   end
+
+  it 'should make all other non-leap years, false' do
+    expect(leap_year?(2022)).to eq false
+  end
 end
